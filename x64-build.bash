@@ -6,6 +6,7 @@
 
 [[ ! -d mount-point/sbin ]] && sudo mount ker.img mount-point -t ext4 -o loop
 
+# -nolibc for linker
 debug_flags="-g"
 common_flags="-Wl,-eentry_point -ffreestanding -nostdlib -no-pie -masm=intel"
 
